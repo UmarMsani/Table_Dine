@@ -1,0 +1,57 @@
+/* Style the video element */
+.background video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Style the header */
+header {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  z-index: 1; /* Make sure header appears above video */
+}
+
+/* Logo style*/
+.logo img {
+  width: 40px;
+  height: auto;
+  padding-top: 10px;
+}
+
+/* Style the navigation links */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 150px;
+  background-color: none;
+}
+
+/* Style the navigation link */
+.nav-links a {
+  color: #f7f3f3;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  margin-top: 800px;
+  padding: 20px 0;
+  margin-left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  margin-bottom: 0 13px;
+}

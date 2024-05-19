@@ -2,11 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
-  <body>
+  <body class="home-page">
+    <header>
+      <nav>
+        <a href="index.html" class="logo"><img src="./img/logo.jpg " alt=""></a>
+        <div class="nav-links" id="navlinks">
+                <a href="Index.html">Home</a>
+                <a href=" ">Login </a>
+                <a href="">Sign up</a>
+                <a href=" ">Search</a>
+        </div>
+      </nav>
+    </header>
+    <div class="background">
+      <video width="320" height="240" control autoplay loop>
+        <source src="video/v1.mp4" type="video/mp4">
+      </video>
+    <footer>
+      <p>&copy; 2024 TableDine</p>
+    </footer>
+
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
