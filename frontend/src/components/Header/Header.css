@@ -45,11 +45,11 @@
     cursor: pointer;
 }
 
-.header-content img {
+.header img {
   position: relative;
   width: 24vw;
-  left: 51vw;
-  top: 23.5vw;
+  left: 52vw;
+  top: 1.9vw;
   max-width: 100%;
   max-height: 100%;
 }
