@@ -1,12 +1,12 @@
 .header{
     height: 50vh;
-    margin: -20px auto;
+    margin: 0px auto;
     background-image: none;
     background-size: contain;
     position: relative;
     border-radius: 30px;
     background-position: 0px 0px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .header-content{
@@ -47,7 +47,9 @@
 
 .header-content img {
   position: relative;
-  width: 330px;
-  left: 710px;
-  top: 325px;
+  width: 24vw;
+  left: 51vw;
+  top: 23.5vw;
+  max-width: 100%;
+  max-height: 100%;
 }
