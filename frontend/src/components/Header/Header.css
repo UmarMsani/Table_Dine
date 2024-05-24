@@ -1,6 +1,6 @@
 .header{
     height: 50vh;
-    margin: 0px auto;
+    margin: 0px;
     background-image: none;
     background-size: contain;
     position: relative;
@@ -46,10 +46,43 @@
 }
 
 .header img {
-  position: relative;
+  position:absolute;
   width: 24vw;
   left: 52vw;
   top: 1.9vw;
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width:1050px) {
+
+    .header-content{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+    .header-content{
+        max-width: 65%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+}
+
+@media (max-width:1050px) {
+
+    .img{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+
+    .header-content{
+        max-width: 65%;
+    }
 }
