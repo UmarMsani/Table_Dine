@@ -41,3 +41,7 @@ video {
     opacity: 1;
   }
 }
+
+body:not(.home-page) video {
+  display: none;
+}

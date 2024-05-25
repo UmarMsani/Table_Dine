@@ -6,6 +6,7 @@ import Cart from './pages/Cart/Cart'
 import Order from './pages/Order/Order'
 import Footer from './components/Footer/Footer'
 import LoginPopUp from './components/LogInPopUp/LogInPopUp'
+import MenuPage from './components/Menu/MenuPage'
 const App = () => {
 
   const [showLogin, setShowLogin] = useState(false)
@@ -17,6 +18,7 @@ const App = () => {
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/menu' element={<MenuPage />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/order' element={<Order />} />
         </Routes>
