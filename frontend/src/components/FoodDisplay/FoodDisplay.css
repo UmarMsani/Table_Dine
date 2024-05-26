@@ -5,6 +5,7 @@
 .food-display h2{
     font-size: max(2vw, 24px);
     font-weight: 600;
+    color: white;
 }
 
 .food-display-list{
@@ -13,4 +14,5 @@
     margin-top: 24px;
     gap: 30px;
     row-gap: 50px;
+    color: white;
 }

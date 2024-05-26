@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import './Cart.css'
 import { StoreContext } from '../../context/StoreContext'
 import { useNavigate } from 'react-router-dom';
+import BackgroundVideo from '../../components/BackgroundVideo/BackgroundVideo';
 
 const Cart = () => {
 
@@ -10,6 +11,8 @@ const Cart = () => {
   const navigate = useNavigate();
 
   return (
+    <div>
+      <BackgroundVideo/>
     <div className='cart'>
       <div className="cart-items">
         <div className="cart-items-title">
@@ -25,6 +28,7 @@ const Cart = () => {
         {food_list.map((item, index) => {
           if (cartItems[item._id] > 0) {
             return (
+              // eslint-disable-next-line react/jsx-key
               <div>
                 <div className='cart-items-title cart-items-item'>
                   <img src={item.image} alt="" />
@@ -32,7 +36,7 @@ const Cart = () => {
                   <p>R{item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>R{item.price * cartItems[item._id]}</p>
-                  <p onClick={() => removeFromCart(item._id)} className='cross'>x</p>
+                  <p onClick={() => removeFromCart(item._id)} className='cross'>🚮</p>
                 </div>
                 <hr />
               </div>
@@ -50,7 +54,7 @@ const Cart = () => {
             </div>
             <hr />
             <div className="cart-total-details">
-              <p>Delivery Fee</p>
+              <p>...........</p>
               <p>R{getTotalCartAmount() === 0 ? 0 : 30}</p>
             </div>
             <hr />
@@ -60,10 +64,11 @@ const Cart = () => {
             </div>
           </div>
           <button onClick={() => navigate('/order')} >Proceed to Checkout</button>
+          <button onClick={() => navigate('/menu')} >Go Back To Menu</button>
         </div>
         <div className="cart-promo-code">
           <div>
-            <p>If you have a promo code, enter it here</p>
+            <p>If you have a promo code, enter it here:</p>
             <div className='cart-promo-code-input'>
               <input type="text" placeholder='promo code' />
               <button>Submit</button>
@@ -71,6 +76,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

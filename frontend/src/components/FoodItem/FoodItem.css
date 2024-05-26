@@ -33,12 +33,12 @@
 }
 
 .food-item-description{
-    color: #000000;
+    color: #ffffff;
     font-size: 12px;
 }
 
 .food-item-price{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 22px;
     font-weight: 500;
     margin: 10px 0px;

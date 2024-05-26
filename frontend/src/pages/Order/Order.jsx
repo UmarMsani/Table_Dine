@@ -1,15 +1,21 @@
 import React, { useContext } from 'react'
 import './Order.css'
 import { StoreContext } from '../../context/StoreContext';
+import BackgroundVideo from '../../components/BackgroundVideo/BackgroundVideo';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Order = () => {
 
   const { getTotalCartAmount } = useContext(StoreContext);
 
+  const navigate = useNavigate();
+
   return (
+    <div>
+      <BackgroundVideo/>
     <form className='place-order'>
       <div className="place-order-left">
-        <p className="title">Delivery Information</p>
+        <p className="title">Booking Information</p>
         <div className="multi-fields">
           <input type="text" placeholder='First Name' />
           <input type="text" placeholder='Last Name' />
@@ -36,7 +42,7 @@ const Order = () => {
             </div>
             <hr />
             <div className="cart-total-details">
-              <p>Delivery Fee</p>
+              <p>...........</p>
               <p>R{getTotalCartAmount() === 0 ? 0 : 30}</p>
             </div>
             <hr />
@@ -46,9 +52,11 @@ const Order = () => {
             </div>
           </div>
           <button>Proceed to Payment</button>
+          <button onClick={() => navigate('/cart')}>Go Back To Cart</button>
         </div>
       </div>
     </form>
+    </div>
   )
 }
 

@@ -33,7 +33,7 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
-    gap: mac(12vw, 20px);
+    gap: max(12vw, 20px);
 }
 
 .cart-total{
@@ -41,12 +41,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: #ffffff;
 }
 
 .cart-total-details{
    display: flex;
    justify-content: space-around;
-   color: #555;
+   color: #ffffff;
 }
 
 .cart-total hr{
@@ -55,8 +56,8 @@
 
 .cart-total button{
     border: none;
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: max(15vw, 200px);
     padding: 12px 0px;
     border-radius: 13px;
@@ -68,7 +69,7 @@
 }
 
 .cart-promo-code p{
-    color: #555;
+    color: #ffffff;
 }
 
 .cart-promo-code-input{
@@ -104,3 +105,18 @@
        justify-content: start;
     }
 }
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1!important;
+  }

@@ -7,6 +7,7 @@ import Order from './pages/Order/Order'
 import Footer from './components/Footer/Footer'
 import LoginPopUp from './components/LogInPopUp/LogInPopUp'
 import MenuPage from './components/Menu/MenuPage'
+import AboutUs from './components/AboutUs/AboutUs'
 const App = () => {
 
   const [showLogin, setShowLogin] = useState(false)
@@ -21,6 +22,7 @@ const App = () => {
           <Route path='/menu' element={<MenuPage />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/order' element={<Order />} />
+          <Route path='/about-us' element={<AboutUs />} />
         </Routes>
       </div>
       <Footer />
