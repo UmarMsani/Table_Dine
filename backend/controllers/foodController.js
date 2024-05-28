@@ -5,10 +5,12 @@ import fs from 'fs'
 // add food items
 
 const addFood = async (req, res) => {
-
-
-  let image_filename = `${req.file.filename}`
-
+  if (!req.file) {
+    return res.status(400).send('No file uploaded.');
+  }
+  
+  let image_filename = `${req.file.filename}`;
+  
   const food = new foodModel({
     name: req.body.name,
     description: req.body.description,
