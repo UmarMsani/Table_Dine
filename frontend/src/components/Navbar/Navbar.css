@@ -51,6 +51,41 @@
     position: relative;
 }
 
+.navbar-profile{
+    position: relative;
+}
+
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: -100px;
+    z-index: 10;
+}
+
+
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    padding: 12px 25px;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    outline: 2px solid white;
+    list-style: none;
+}
+
+.nav-profile-dropdown li:hover{
+    color: rgb(64, 68, 125);
+}
+
+.nav-profile-dropdown li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+}
 
 .navbar-search-icon .dot{
     position: absolute;
@@ -60,6 +95,10 @@
     border-radius: 5px;
     top: -4px;
     right: -4px;
+}
+
+.nav-profile-dropdown img{
+    width: 20px;
 }
 
 @media (max-width:1050px) {
