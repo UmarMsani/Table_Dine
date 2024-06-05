@@ -1,24 +1,24 @@
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     gap: 0px;
 }
 
-.menu h1{
+.menu h1 {
     color: #ffffff;
     font-weight: 500;
     margin: 20px;
     margin-left: 9px;
 }
 
-.menu-text{
+.menu-text {
     max-width: 70%;
     columns: #808080;
     color: white;
-    margin-left: 9px; 
+    margin-left: 9px;
 }
 
-.menu-list{
+.menu-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,11 +28,11 @@
     overflow-x: scroll;
 }
 
-.menu-list::-webkit-scrollbar{
+.menu-list::-webkit-scrollbar {
     display: flex;
 }
 
-.menu-list-item img{
+.menu-list-item img {
     width: 7.0vw;
     min-width: 80px;
     cursor: pointer;
@@ -40,27 +40,27 @@
     transition: 0.2s;
 }
 
-.menu-list-item p{
+.menu-list-item p {
     margin-top: 8px;
     color: #ffffff;
     font-size: max(1.4vw, 16px);
     cursor: pointer;
 }
 
-.menu hr{
+.menu hr {
     margin: -16px 0px;
     height: 2px;
     background-color: #ffffffb2;
     border: none;
 }
 
-.menu-list-item .active{
+.menu-list-item .active {
     border: 4.5px solid white;
     padding: 2px;
 }
 
-@media (max-width:1050px){
-    .menu-text{
+@media (max-width:1050px) {
+    .menu-text {
         max-width: 100%;
         font-size: 14px;
     }

@@ -1,8 +1,25 @@
-# React + Vite
+# Table Dine Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Table Dine Admin Panel** is a web application built with React and Vite. It provides a user-friendly interface for managing the booking and ordering process for Table Dine, a restaurant booking and food ordering platform.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Manage restaurant tables and bookings.
+- Add, edit, and remove menu items.
+- Manage user accounts and permissions.
+- View and manage orders.
+
+## Installation
+
+- Clone the repository: ```git clone https://github.com/UmarMsani/Table_Dine.git```
+- Navigate to the project directory: ```cd admin```
+- Install dependencies: ```npm install```
+- Start the development server: ```npm run dev```
+
+## Dependencies
+
+- React
+- Vite
+- React Router
+- React Hook Form

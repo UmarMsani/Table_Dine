@@ -8,12 +8,18 @@ import Orders from './pages/Orders/Orders'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+/**
+ * The main component of the admin application.
+ * This component sets up the routes for the application and renders the necessary components.
+ * @returns {JSX.Element} The rendered JSX element.
+ */
 const App = () => {
-
-  const url = "http://localhost:4000"
+  // Base URL for the API
+  const url = "http://localhost:4000";
 
   return (
     <div>
+
       <ToastContainer theme="colored" />
       <Navbar />
       <hr />
@@ -26,7 +32,7 @@ const App = () => {
         </Routes>
       </div>
     </div>
-  )
+  );
 }
 
 export default App

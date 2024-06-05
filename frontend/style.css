@@ -1,4 +1,3 @@
-/* Style the video element */
 .background video {
   position: fixed;
   top: 0;
@@ -9,23 +8,20 @@
   z-index: -1;
 }
 
-/* Style the header */
 header {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 1; /* Make sure header appears above video */
+  z-index: 1;
 }
 
-/* Logo style*/
 .logo img {
   width: 40px;
   height: auto;
   padding-top: 10px;
 }
 
-/* Style the navigation links */
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -34,7 +30,6 @@ header {
   background-color: none;
 }
 
-/* Style the navigation link */
 .nav-links a {
   color: #f7f3f3;
   font-weight: bolder;
@@ -42,7 +37,6 @@ header {
   padding: 5px 10px;
 }
 
-/* Footer */
 footer {
   background-color: white;
   margin-top: 800px;

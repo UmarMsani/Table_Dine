@@ -3,6 +3,10 @@ import './Sidebar.css'
 import { assets } from '../../assets/assets'
 import { NavLink } from 'react-router-dom'
 
+/**
+ * Sidebar component that renders navigation links for 'Add Items', 'List Items', and 'Orders'
+ * @returns {JSX.Element} The Sidebar component
+ */
 const Sidebar = () => {
   return (
     <div className='sidebar'>
@@ -15,13 +19,18 @@ const Sidebar = () => {
           <img src={assets.list_icon} alt="" />
           <p>List Items</p>
         </NavLink>
+
         <NavLink to='/orders' className="sidebar-option">
           <img src={assets.order_icon} alt="" />
           <p>Orders</p>
         </NavLink>
+        <NavLink to='/trackorders' className="sidebar-option">
+          <img src={assets.list_icon} alt="" />
+          <p>Track Orders</p>
+        </NavLink>
       </div>
     </div>
-  ) 
+  )
 }
 
 export default Sidebar

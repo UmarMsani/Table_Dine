@@ -26,3 +26,52 @@
     display: none;
   }
 }
+
+
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .trash {
+  color: red;
+}
+
+.actions .edit {
+  color: blue;
+}
+
+.update-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cancel-button {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}

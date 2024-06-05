@@ -3,9 +3,15 @@ import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 import validator from "validator"
 
-// User login
+/**
+ * Function to handle user login
+ * @param {Object} req - Express request object
+ * @param {Object} res - Express response object
+ * @returns {Object} JSON object with success status and token or error message
+ */
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
+
   try {
     const user = await userModel.findOne({ email });
 
@@ -19,7 +25,6 @@ const loginUser = async (req, res) => {
     }
 
     const token = createToken(user._id);
-
     res.json({ success: true, token })
 
   } catch (error) {

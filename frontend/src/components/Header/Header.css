@@ -1,6 +1,7 @@
-.header{
+.header {
     height: 50vh;
     margin: 0px;
+    margin-top: 50px;
     background-image: none;
     background-size: contain;
     position: relative;
@@ -9,7 +10,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.header-content{
+.header-content {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -21,20 +22,20 @@
     animation: fadeIn 3s;
 }
 
-.header-content h2{
+.header-content h2 {
     font-weight: 500;
     color: black;
     font-size: max(4.3vw, 21px);
     height: 160px;
 }
 
-.header-content p{
+.header-content p {
     color: black;
     font-size: 1.2vw;
     transform: translateY(-20px);
 }
 
-.header-content button{
+.header-content button {
     border: none;
     color: white;
     font-weight: 500;
@@ -46,21 +47,22 @@
 }
 
 .header img {
-  position:absolute;
-  width: 30%;
-  left: 53vw;
-  top: 2.3vw;
-  max-width: 100%;
-  max-height: 100%;
+    position: absolute;
+    width: 30%;
+    left: 53vw;
+    top: 3.5vw;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
 @media (max-width:1050px) {
 
-    .header-content{
+    .header-content {
         max-width: 45%;
     }
-    .header img{
+
+    .header img {
         width: 35%;
         left: 47vw;
         bottom: 17vw;
@@ -68,37 +70,40 @@
 }
 
 @media (max-width:750px) {
-    .header-content{
+    .header-content {
         max-width: 65%;
     }
-    .header-content p{
+
+    .header-content p {
         display: none;
     }
-    .header-content button{
+
+    .header-content button {
         padding: 2vw 4vw;
     }
 }
 
 @media (max-width:1050px) {
 
-    .header img{
+    .header img {
         max-width: 45%;
     }
 }
 
 @media (max-width:750px) {
 
-    .header-content{
+    .header-content {
         max-width: 65%;
     }
 }
 
 @media (max-width:1440px) {
 
-    .header-content{
+    .header-content {
         max-width: 65%;
     }
-    .header img{
-        top: 1.5vw;
+
+    .header img {
+        top: 2vw;
     }
 }

@@ -3,7 +3,12 @@ import Menu from './Menu'
 import FoodDisplay from '../FoodDisplay/FoodDisplay'
 import BackgroundVideo from '../BackgroundVideo/BackgroundVideo'
 
+/**
+ * MenuPage component that displays the menu page
+ * @returns {JSX.Element} The MenuPage component
+ */
 const MenuPage = () => {
+
   const [category, setCategory] = React.useState("All")
 
   return (

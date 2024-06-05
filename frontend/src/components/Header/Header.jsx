@@ -2,6 +2,13 @@ import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
 
+/**
+ * Header component displays the header section of the website
+ * which includes an image, a heading, a description, and a button
+ * to view the menu.
+ *
+ * @returns The Header component
+ */
 const Header = () => {
   return (
     <div className='header'>

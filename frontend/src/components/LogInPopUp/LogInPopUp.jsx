@@ -4,46 +4,62 @@ import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext'
 import axios from "axios"
 
+/**
+ * LogInPopUp Component
+ * 
+ * This component provides a login/sign up form as a popup.
+ * It allows users to sign up or log in to the application.
+ * 
+ * @param {function} setShowLogin - A function to hide the login/sign up popup
+ * @returns - The LogInPopUp component
+ */
 const LogInPopUp = ({ setShowLogin }) => {
 
-  const { url, setToken } = useContext(StoreContext)
+  const { url, setToken } = useContext(StoreContext);
 
-  const [currState, setCurrState] = useState("Sign In")
+  const [currState, setCurrState] = useState("Sign In");
   const [data, setData] = useState({
     name: "",
     email: "",
     password: ""
-  })
+  });
 
+  /**
+   * Handles input change events
+   * 
+   * @param {object} event - The event object
+   */
   const onChangeHandler = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setData(data => ({ ...data, [name]: value }))
+    setData(data => ({ ...data, [name]: value }));
   }
 
+  /**
+   * Handles form submission
+   * 
+   * @param {object} event - The event object
+   */
   const onLogin = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     let newUrl = url;
 
     if (currState === "Sign In") {
-      newUrl += "/api/user/login"
-    }
-    else {
-      newUrl += "/api/user/register"
+      newUrl += "/api/user/login";
+    } else {
+      newUrl += "/api/user/register";
     }
 
     const response = await axios.post(newUrl, data);
 
     if (response.data.success) {
       setToken(response.data.token);
-      localStorage.setItem("token", response.data.token)
-      setShowLogin(false)
-    }
-    else {
-      alert(response.data.message)
+      localStorage.setItem("token", response.data.token);
+      setShowLogin(false);
+    } else {
+      alert(response.data.message);
     }
   }
-
 
   return (
     <div className='login-popup'>
@@ -68,7 +84,7 @@ const LogInPopUp = ({ setShowLogin }) => {
         }
       </form>
     </div>
-  )
-}
+  );
+};
 
 export default LogInPopUp

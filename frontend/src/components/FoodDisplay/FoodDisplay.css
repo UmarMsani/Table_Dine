@@ -1,14 +1,14 @@
-.food-display{
+.food-display {
     margin-top: 47px;
 }
 
-.food-display h2{
+.food-display h2 {
     font-size: max(2vw, 24px);
     font-weight: 600;
     color: white;
 }
 
-.food-display-list{
+.food-display-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     margin-top: 24px;
